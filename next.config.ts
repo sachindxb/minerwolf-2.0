@@ -6,16 +6,21 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true,
   
-  // Update rewrites to handle root URL
+  // Try redirects instead of rewrites
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/landing/landing/page.html',
+        permanent: true,
+      }
+    ];
+  },
+
+  // Keep basic rewrites for other paths
   async rewrites() {
     return [
       {
-        // This will make root URL show your landing page
-        source: '/',
-        destination: '/landing/landing/page.html',
-      },
-      {
-        // Keep this for other paths
         source: '/:path*',
         destination: '/:path*',
       }
