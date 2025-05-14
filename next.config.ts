@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
-
+// next.config.ts
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Remove headers section completely
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/landing/landing/page.html',
+      }
+    ];
+  }
 };
-
-export default nextConfig;

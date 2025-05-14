@@ -1,0 +1,91 @@
+15/05/2025:
+PS C:\Users\sachi\Desktop> npx create-next-app@latest minerwolf
+√ Would you like to use TypeScript? ... No / Yes
+√ Would you like to use ESLint? ... No / Yes
+√ Would you like to use Tailwind CSS? ... No / Yes
+√ Would you like your code inside a `src/` directory? ... No / Yes
+√ Would you like to use App Router? (recommended) ... No / Yes
+√ Would you like to use Turbopack for `next dev`? ... No / Yes
+√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
+√ What import alias would you like configured? ... @/*
+Creating a new Next.js app in C:\Users\sachi\Desktop\minerwolf.
+
+Using npm.
+
+Initializing project with template: app-tw
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+
+Installing devDependencies:
+- typescript
+- @types/node
+- @types/react
+- @types/react-dom
+- @tailwindcss/postcss
+- tailwindcss
+- eslint
+- eslint-config-next
+- @eslint/eslintrc
+
+
+added 389 packages, and audited 390 packages in 60s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Initialized a git repository.
+
+Success! Created minerwolf at C:\Users\sachi\Desktop\minerwolf
+
+PS C:\Users\sachi\Desktop>
+---------------------
+
+PS C:\Users\sachi\Desktop\minerwolf> npm install helmet
+
+added 1 package, and audited 391 packages in 2s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\sachi\Desktop\minerwolf> npm install @types/helmet
+
+added 11 packages, and audited 402 packages in 5s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\sachi\Desktop\minerwolf> npm install csrf
+
+added 5 packages, and audited 407 packages in 4s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\sachi\Desktop\minerwolf> npm install @types/csrf
+
+added 1 package, and audited 408 packages in 4s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\sachi\Desktop\minerwolf> npm install rate-limiter-flexible
+
+added 1 package, and audited 409 packages in 3s
+
+138 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\sachi\Desktop\minerwolf>
+
+---------------------------------
+
