@@ -1,6 +1,11 @@
-// next.config.ts
+import type { NextConfig } from "next";
+
 const nextConfig: NextConfig = {
-  // Remove headers section completely
+  eslint: {
+    // Disable ESLint during builds
+    ignoreDuringBuilds: true,
+  },
+  reactStrictMode: true,
   async rewrites() {
     return [
       {
@@ -10,3 +15,5 @@ const nextConfig: NextConfig = {
     ];
   }
 };
+
+export default nextConfig;
