@@ -6,25 +6,16 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true,
   
-  // Try redirects instead of rewrites
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/landing/landing/page.html',
-        permanent: true,
-      }
-    ];
-  },
-
-  // Keep basic rewrites for other paths
+  // Clean URL structure
   async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: '/:path*',
-      }
-    ];
+    return {
+      beforeFiles: [
+        {
+          source: '/',
+          destination: '/landing/landing/page.html',
+        }
+      ]
+    };
   }
 };
 
